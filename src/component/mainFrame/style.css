@@ -1,0 +1,19 @@
+.my-sidebar{
+    position:fixed;
+    top:0px;
+    background-color: black;
+    /* height: 100vh; */
+    overflow: auto;
+    width: 200px;
+}
+.my-wrapper{
+    padding-top:0px !important;
+    margin-left: 200px !important;
+}
+
+@media (max-width:991px){
+    .my-wrapper{
+        padding-top:0px !important;
+        margin-left: 0px !important;
+    }
+}

@@ -1,0 +1,15 @@
+.previewImage{
+    height: 75vh;
+    border-radius: 10px;
+}
+.closeBtn{
+    margin:10px;
+    border:none;
+    outline:none;
+    /* font-weight: lighter; */
+}
+.closeBtn:active{
+    border:none;
+    outline:none;
+    /* font-weight: normal; */
+}
