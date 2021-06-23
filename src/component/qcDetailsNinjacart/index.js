@@ -684,7 +684,7 @@ export default function QcDetailsNinjacart({
                 <div className="row_note1">
                   <p className="note_name">note:</p>
                   <p className="note_stats">
-                    Verify aadhar number with the images
+                    Verify Profile Verification Screenshot with today's date and time
                   </p>
                 </div>
               </div>
