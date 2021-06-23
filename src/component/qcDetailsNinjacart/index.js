@@ -30,6 +30,7 @@ export default function QcDetailsNinjacart({
     shopName: "none",
     category: "none",
     aadhar: "none",
+    profileSS:"none"
   }); //yes no none
 
   const routeToDashboard = () => {
@@ -650,13 +651,13 @@ export default function QcDetailsNinjacart({
                       className="j_yes"
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.aadhar === "yes" ? "none" : "auto"
+                          yesBtnObj.profileSS === "yes" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.aadhar === "yes" ? "activeBtn" : ""
+                        yesBtnObj.profileSS === "yes" ? "activeBtn" : ""
                       }`}
-                      data-label="aadhar"
+                      data-label="profileSS"
                       onClick={updateScore}
                       value={`YES`}
                     >
@@ -667,14 +668,14 @@ export default function QcDetailsNinjacart({
                       className="j_yes"
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.aadhar === "no" ? "none" : "auto"
+                          yesBtnObj.profileSS === "no" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.aadhar === "no" ? "activeBtn" : ""
+                        yesBtnObj.profileSS === "no" ? "activeBtn" : ""
                       }`}
                       onClick={updateScore}
-                      data-label="aadhar"
+                      data-label="profileSS"
                     >
                       NO
                     </p>
