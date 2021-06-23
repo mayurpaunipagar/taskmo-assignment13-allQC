@@ -3,8 +3,8 @@ import SideBarContent from "../sidebarContent";
 import QcDetails from "./../qcDetails";
 import { Route } from "react-router-dom";
 import Home from "../home";
-import NinjacartQcDetails from "../ninjacartQcDetails";
-import QcDetailsJiomart from "../QcDetailsJiomart";
+import QcDetailsNinjacart from "../qcDetailsNinjacart";
+import QcDetailsJiomart from "../qcDetailsJiomart";
 export default function MainFrame({
   blur,
   setBlur,
@@ -27,7 +27,7 @@ export default function MainFrame({
             />
           </Route>
           <Route path="/2/qc-details"> {/* 2=ninjacart */}
-            <NinjacartQcDetails
+            <QcDetailsNinjacart
               blur={blur}
               setBlur={setBlur}
               setImagePreview={setImagePreview}

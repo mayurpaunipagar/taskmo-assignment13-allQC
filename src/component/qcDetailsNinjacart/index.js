@@ -12,7 +12,7 @@ import {
 } from "../../utils";
 import { useHistory } from "react-router-dom";
 
-export default function NinjacartQcDetails({
+export default function QcDetailsNinjacart({
   blur,
   setBlur,
   setImagePreview,
