@@ -12,7 +12,7 @@ import {
 } from "../../utils";
 import { useHistory } from "react-router-dom";
 
-export default function QcDetails({
+export default function QcDetailsRapido({
   blur,
   setBlur,
   setImagePreview,
@@ -27,9 +27,10 @@ export default function QcDetails({
   const [qcScore, setQcScore] = useState(0);
   const [totalCount, setTotalCount] = useState(0);
   const [yesBtnObj, setYesBtnObj] = useState({
-    shopName: "none",
-    category: "none",
+    name: "none",
+    contact: "none",
     aadhar: "none",
+    vehicleNumber:"none"
   }); //yes no none
 
   const updateScore = (e) => {
@@ -254,13 +255,13 @@ export default function QcDetails({
                     <p
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.shopName === "yes" ? "none" : "auto"
+                          yesBtnObj.contact === "yes" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.shopName === "yes" ? "activeBtn" : ""
+                        yesBtnObj.contact === "yes" ? "activeBtn" : ""
                       }`}
-                      data-label="shopName"
+                      data-label="contact"
                       onClick={updateScore}
                       value={`YES`}
                     >
@@ -269,14 +270,14 @@ export default function QcDetails({
                     <p
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.shopName === "no" ? "none" : "auto"
+                          yesBtnObj.contact === "no" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.shopName === "no" ? "activeBtn" : ""
+                        yesBtnObj.contact === "no" ? "activeBtn" : ""
                       }`}
                       onClick={updateScore}
-                      data-label="shopName"
+                      data-label="contact"
                     >
                       NO
                     </p>
@@ -302,13 +303,13 @@ export default function QcDetails({
                     <p
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.category === "yes" ? "none" : "auto"
+                          yesBtnObj.name === "yes" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.category === "yes" ? "activeBtn" : ""
+                        yesBtnObj.name === "yes" ? "activeBtn" : ""
                       }`}
-                      data-label="category"
+                      data-label="name"
                       onClick={updateScore}
                       value={`YES`}
                     >
@@ -318,14 +319,14 @@ export default function QcDetails({
                       className="j_yes"
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.category === "no" ? "none" : "auto"
+                          yesBtnObj.name === "no" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.category === "no" ? "activeBtn" : ""
+                        yesBtnObj.name === "no" ? "activeBtn" : ""
                       }`}
                       onClick={updateScore}
-                      data-label="category"
+                      data-label="name"
                     >
                       NO
                     </p>
@@ -478,13 +479,13 @@ export default function QcDetails({
                       className="j_yes"
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.aadhar === "yes" ? "none" : "auto"
+                          yesBtnObj.vehicleNumber === "yes" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.aadhar === "yes" ? "activeBtn" : ""
+                        yesBtnObj.vehicleNumber === "yes" ? "activeBtn" : ""
                       }`}
-                      data-label="aadhar"
+                      data-label="vehicleNumber"
                       onClick={updateScore}
                       value={`YES`}
                     >
@@ -495,14 +496,14 @@ export default function QcDetails({
                       className="j_yes"
                       style={{
                         pointerEvents: `${
-                          yesBtnObj.aadhar === "no" ? "none" : "auto"
+                          yesBtnObj.vehicleNumber === "no" ? "none" : "auto"
                         }`,
                       }}
                       className={`j_yes ${
-                        yesBtnObj.aadhar === "no" ? "activeBtn" : ""
+                        yesBtnObj.vehicleNumber === "no" ? "activeBtn" : ""
                       }`}
                       onClick={updateScore}
-                      data-label="aadhar"
+                      data-label="vehicleNumber"
                     >
                       NO
                     </p>
