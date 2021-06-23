@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 /*
 color: #876bf5 - header
 #c8b5fa -border purple
@@ -13,7 +14,7 @@ color: #876bf5 - header
   background-color: #fafafa;
   width: 100%;
   min-height: 600px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Mulish, Helvetica, sans-serif; */
   text-transform: none;
   /* letter-spacing: 1px; */
   padding: 10px;

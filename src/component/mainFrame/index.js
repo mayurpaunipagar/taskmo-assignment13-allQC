@@ -4,6 +4,7 @@ import QcDetails from "./../qcDetails";
 import { Route } from "react-router-dom";
 import Home from "../home";
 import NinjacartQcDetails from "../ninjacartQcDetails";
+import QcDetailsJiomart from "../QcDetailsJiomart";
 export default function MainFrame({
   blur,
   setBlur,
@@ -18,7 +19,7 @@ export default function MainFrame({
         </div>
         <div className={`page-wrapper my-wrapper ${blur ? "myBlur" : ""}`}>
           <Route path="/1/qc-details"> {/* 1=jiomart */}
-            <QcDetails
+            <QcDetailsJiomart
               blur={blur}
               setBlur={setBlur}
               setImagePreview={setImagePreview}
