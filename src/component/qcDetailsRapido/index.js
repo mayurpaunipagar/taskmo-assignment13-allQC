@@ -93,8 +93,8 @@ export default function QcDetailsRapido({
         setBlur(true);
         setQcDoneMessage("Network Error");
       });
-    setBlur(true);
-    setQcDoneMessage("Approved");
+    // setBlur(true);
+    // setQcDoneMessage("Approved");
   };
   const rejectFunc = () => {
     fetch(NINJACART_REJECT_URL, {
@@ -118,30 +118,33 @@ export default function QcDetailsRapido({
       .catch((e) => {
         console.log("Error: While Reject ", e);
         setQcDoneMessage("Network Error");
-      });
-  };
-  const redoFunc = () => {
-    fetch(NINJACART_REDO_URL, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        lead_id: leadId,
-        qc_admin_id: "1",
-        qc_remark: comment,
-      }),
-    })
-      .then((r) => r.json())
-      .then((r) => {
-        console.log("#Redo", r);
-        setQcDoneMessage("Redo");
         setBlur(true);
-      })
-      .catch((e) => {
-        console.log("Error: While Redo ", e);
       });
   };
+  // const redoFunc = () => {
+  //   fetch(NINJACART_REDO_URL, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       lead_id: leadId,
+  //       qc_admin_id: "1",
+  //       qc_remark: comment,
+  //     }),
+  //   })
+  //     .then((r) => r.json())
+  //     .then((r) => {
+  //       console.log("#Redo", r);
+  //       setQcDoneMessage("Redo");
+  //       setBlur(true);
+  //     })
+  //     .catch((e) => {
+  //       console.log("Error: While Redo ", e);
+  //       setQcDoneMessage("Network Error!");
+  //       setBlur(true);
+  //     });
+  // };
   const getLeadDetails = () => {
     fetch(NINJACART_LEAD_FIELDS_URL, {
       method: "POST",

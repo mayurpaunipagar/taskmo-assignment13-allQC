@@ -100,50 +100,55 @@ export default function QcDetailsNinjacart({
     setQcDoneMessage("Approved");
   };
   const rejectFunc = () => {
-    fetch(NINJACART_REJECT_URL, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        lead_id: leadId,
-        qc_admin_id: "1",
-        qc_remark: comment,
-        is_fake: `${fakeOnBoarding ? "1" : "0"}`,
-      }),
-    })
-      .then((r) => r.json())
-      .then((r) => {
-        console.log("#Reject", r);
-        setQcDoneMessage("Rejected");
-        setBlur(true);
-      })
-      .catch((e) => {
-        console.log("Error: While Reject ", e);
-        setQcDoneMessage("Network Error");
-      });
+    
+    setQcDoneMessage("Rejected");
+    setBlur(true);
+    // fetch(NINJACART_REJECT_URL, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     lead_id: leadId,
+    //     qc_admin_id: "1",
+    //     qc_remark: comment,
+    //     is_fake: `${fakeOnBoarding ? "1" : "0"}`,
+    //   }),
+    // })
+    //   .then((r) => r.json())
+    //   .then((r) => {
+    //     console.log("#Reject", r);
+    //     setQcDoneMessage("Rejected");
+    //     setBlur(true);
+    //   })
+    //   .catch((e) => {
+    //     console.log("Error: While Reject ", e);
+    //     setQcDoneMessage("Network Error");
+    //   });
   };
   const redoFunc = () => {
-    fetch(NINJACART_REDO_URL, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        lead_id: leadId,
-        qc_admin_id: "1",
-        qc_remark: comment,
-      }),
-    })
-      .then((r) => r.json())
-      .then((r) => {
-        console.log("#Redo", r);
-        setQcDoneMessage("Redo");
-        setBlur(true);
-      })
-      .catch((e) => {
-        console.log("Error: While Redo ", e);
-      });
+    setQcDoneMessage("Redo");
+    setBlur(true);
+    // fetch(NINJACART_REDO_URL, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     lead_id: leadId,
+    //     qc_admin_id: "1",
+    //     qc_remark: comment,
+    //   }),
+    // })
+    //   .then((r) => r.json())
+    //   .then((r) => {
+    //     console.log("#Redo", r);
+    //     setQcDoneMessage("Redo");
+    //     setBlur(true);
+    //   })
+    //   .catch((e) => {
+    //     console.log("Error: While Redo ", e);
+    //   });
   };
   const getLeadDetails = () => {
     fetch(NINJACART_LEAD_FIELDS_URL, {
