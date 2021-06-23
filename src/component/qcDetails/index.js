@@ -609,6 +609,7 @@ export default function QcDetails({
 
                         <p></p>
                       </div> */}
+                      No Prior QC
                     </>
                   )}
                 </div>

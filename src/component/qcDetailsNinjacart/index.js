@@ -674,11 +674,8 @@ export default function QcDetailsNinjacart({
                     </>
                   ) : (
                     <>
-                      {/* <div className="j_p8">
-                        <p className="j_p7">QC 1(lead ID)</p>
-
-                        <p></p>
-                      </div> */}
+                    No Prior QC
+                      
                     </>
                   )}
                 </div>

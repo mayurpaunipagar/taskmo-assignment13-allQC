@@ -680,6 +680,7 @@ export default function QcDetailsJiomart({
 
                         <p></p>
                       </div> */}
+                      No Prior QC
                     </>
                   )}
                 </div>
