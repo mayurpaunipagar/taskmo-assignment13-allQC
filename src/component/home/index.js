@@ -84,9 +84,6 @@ export default function Home() {
             {/* code from super hr template start */}
             <div
               className="row my-table-style "
-              onClick={() => {
-                history.push("/qc-details");
-              }}
             >
               <div className="col-lg-12">
                 <div className="table-heading">
@@ -127,7 +124,9 @@ export default function Home() {
                         ) => {
                           return (
                             <>
-                              <tr key={idx} className="my-tr-style">
+                              <tr key={idx} className="my-tr-style" onClick={() => {
+                history.push(`/${project_id}/qc-details`);
+              }}>
                                 <td className="lead-id-value my-td-style">
                                   {lead_id}
                                 </td>
