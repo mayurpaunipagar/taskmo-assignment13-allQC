@@ -616,42 +616,75 @@ export default function QcDetailsNinjacart({
                 </div>
               </div> */}
               <div className="j_row4">
-                <div className="j_proof">
-                  {/* <p className="j_p9">Verification Screeshot</p> */}
-                  <p className="j_p14 pvs-text">
-                    Profile Verification Screenshot
-                  </p>
-                  <div className="j_row8">
-                    <div className="j_col1">
-                      <div className="j_col2">
-                        <div className="j_dotted my-shop-image">
-                          <img
-                            src={`${
-                              Object.keys(api).length > 0
-                                ? `${IMAGES_BASE_URL}/${api.profile_verification_image}`
-                                : window.location.origin +
-                                  "/images/profile-verification.svg"
-                            }`}
-                            alt="profile verfication"
-                            className="proof_image"
-                            onError={(e) => {
-                              e.target.onerror = null;
-                              e.target.src =
-                                window.location.origin +
-                                "/images/profile-verification.svg";
-                            }}
-                            onClick={(e) => {
-                              // setBlur(true);
-                              setImagePreview({
-                                status: true,
-                                url: `${e.target.src}`,
-                              });
-                            }}
-                          />
-                        </div>
-                      </div>
+                <div className="j_row5">
+                  <div className="j_box3 profileSS">
+                    <p className="j_p9 mt-2">Profile Verification Screenshot</p>
+                    <div className="profileSS-container">
+                      <img
+                        src={`${
+                          Object.keys(api).length > 0
+                            ? `${IMAGES_BASE_URL}/${api.profile_verification_image}`
+                            : window.location.origin +
+                              "/images/profile-verification.svg"
+                        }`}
+                        alt="profile verfication"
+                        className="proof_image profileSS-img"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src =
+                            window.location.origin +
+                            "/images/profile-verification.svg";
+                        }}
+                        onClick={(e) => {
+                          // setBlur(true);
+                          setImagePreview({
+                            status: true,
+                            url: `${e.target.src}`,
+                          });
+                        }}
+                      />
                     </div>
                   </div>
+                  <div className="j_boxes">
+                    <p
+                      className="j_yes"
+                      style={{
+                        pointerEvents: `${
+                          yesBtnObj.aadhar === "yes" ? "none" : "auto"
+                        }`,
+                      }}
+                      className={`j_yes ${
+                        yesBtnObj.aadhar === "yes" ? "activeBtn" : ""
+                      }`}
+                      data-label="aadhar"
+                      onClick={updateScore}
+                      value={`YES`}
+                    >
+                      YES
+                    </p>
+                    <p
+                      className="j_yes"
+                      className="j_yes"
+                      style={{
+                        pointerEvents: `${
+                          yesBtnObj.aadhar === "no" ? "none" : "auto"
+                        }`,
+                      }}
+                      className={`j_yes ${
+                        yesBtnObj.aadhar === "no" ? "activeBtn" : ""
+                      }`}
+                      onClick={updateScore}
+                      data-label="aadhar"
+                    >
+                      NO
+                    </p>
+                  </div>
+                </div>
+                <div className="row_note1">
+                  <p className="note_name">note:</p>
+                  <p className="note_stats">
+                    Verify aadhar number with the images
+                  </p>
                 </div>
               </div>
             </div>
@@ -673,10 +706,7 @@ export default function QcDetailsNinjacart({
                       })}
                     </>
                   ) : (
-                    <>
-                    No Prior QC
-                      
-                    </>
+                    <>No Prior QC</>
                   )}
                 </div>
               </div>
