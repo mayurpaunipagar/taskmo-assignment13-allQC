@@ -32,9 +32,6 @@ export default function QcDetails({
     aadhar: "none",
   }); //yes no none
 
-  const routeToDashboard = () => {
-    history.push("/dashboard");
-  };
   const updateScore = (e) => {
     const label = e.target.dataset.label;
     const value = e.target.innerText;
