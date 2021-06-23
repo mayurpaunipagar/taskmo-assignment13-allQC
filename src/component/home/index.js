@@ -121,6 +121,7 @@ export default function Home() {
                             redoCount,
                             qc_status,
                             d_status,
+                            project_id
                           },
                           idx
                         ) => {

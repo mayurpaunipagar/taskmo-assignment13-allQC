@@ -10,7 +10,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:1
     },
     {
         lead_id:2,
@@ -23,7 +24,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Redo",
-        d_status:false
+        d_status:false,
+        project_id:2
     },
     {
         lead_id:3,
@@ -36,7 +38,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:3
     },
     {
         lead_id:4,
@@ -49,7 +52,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:2
     },
     {
         lead_id:5,
@@ -62,7 +66,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:1
     },
     {
         lead_id:6,
@@ -75,7 +80,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:2
     },
     {
         lead_id:7,
@@ -88,7 +94,8 @@ const qcList=[
         location:"Bangalore",
         redoCount:"013",
         qc_status:"Approved",
-        d_status:true
+        d_status:true,
+        project_id:3
     }
 ]
 
