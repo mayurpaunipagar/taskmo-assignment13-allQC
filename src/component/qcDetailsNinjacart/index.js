@@ -362,7 +362,7 @@ export default function QcDetailsNinjacart({
                   <p className="j_p10">1224 5678 9900</p> */}
                   <div className="j_row6">
                     <div className="j_col1">
-                      {/* <p className="j_p11">Aadhar front image</p> */}
+                      <p className="j_p11">Shop Front</p>
                       <div className="j_col2 aadhar-container">
                         <img
                           src={`${
@@ -389,7 +389,7 @@ export default function QcDetailsNinjacart({
                       </div>
                     </div>
                     <div className="j_col1">
-                      {/* <p className="j_p11">Aadhar back image</p> */}
+                      <p className="j_p11">Shop Left</p>
                       <div className="j_col2 aadhar-container">
                         <img
                           src={`${
@@ -415,7 +415,7 @@ export default function QcDetailsNinjacart({
                       </div>
                     </div>
                     <div className="j_col1">
-                      {/* <p className="j_p11">Aadhar back image</p> */}
+                      <p className="j_p11">Shop Right</p>
                       <div className="j_col2 aadhar-container">
                         <img
                           src={`${
