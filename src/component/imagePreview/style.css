@@ -1,5 +1,6 @@
 .previewImage{
     height: 75vh;
+    min-width: 400px;
     border-radius: 10px;
 }
 .closeBtn{
