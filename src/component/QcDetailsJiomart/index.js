@@ -30,6 +30,7 @@ export default function QcDetailsJiomart({
     shopName: "none",
     category: "none",
     aadhar: "none",
+    mid:"none"
   }); //yes no none
 
   const routeToDashboard = () => {
@@ -598,24 +599,62 @@ export default function QcDetailsJiomart({
                   </div>
                 </div>
               </div>
-              {/* <div className="j_row4">
+              {/* MID Number start */}
+              <div className="j_row4">
                 <div className="j_row5">
                   <div className="j_box3">
                     <p className="j_p9">MID number</p>
-                    <p className="j_p10">123df4567890346</p>
+                    <p className="j_p10">
+                      {Object.keys(api).length > 0
+                        ? api.aadhar_number
+                        : "123df4567890346"}
+                    </p>
                   </div>
                   <div className="j_boxes">
-                    <p className="j_yes">yes</p>
-                    <p className="j_yes">no</p>
+                    <p
+                      className="j_yes"
+                      style={{
+                        pointerEvents: `${
+                          yesBtnObj.mid === "yes" ? "none" : "auto"
+                        }`,
+                      }}
+                      className={`j_yes ${
+                        yesBtnObj.mid === "yes" ? "activeBtn" : ""
+                      }`}
+                      data-label="mid"
+                      onClick={updateScore}
+                      value={`YES`}
+                    >
+                      YES
+                    </p>
+                    <p
+                      className="j_yes"
+                      className="j_yes"
+                      style={{
+                        pointerEvents: `${
+                          yesBtnObj.mid === "no" ? "none" : "auto"
+                        }`,
+                      }}
+                      className={`j_yes ${
+                        yesBtnObj.mid === "no" ? "activeBtn" : ""
+                      }`}
+                      onClick={updateScore}
+                      data-label="mid"
+                    >
+                      NO
+                    </p>
                   </div>
                 </div>
                 <div className="row_note1">
                   <p className="note_name">note:</p>
                   <p className="note_stats">
-                    Verify the MID,is this same as in the profile screen
+                  Verify the MID, is this same as in the profile screen
                   </p>
                 </div>
-              </div> */}
+              </div>   
+              {/* MID Number end */}
+
+              {/* Profile SS start */}
               <div className="j_row4">
                 <div className="j_proof">
                   {/* <p className="j_p9">Verification Screeshot</p> */}
