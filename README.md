@@ -6,7 +6,7 @@
 
 ## Design in AdobeXD
 ### jiomart
-### https://xd.adobe.com/view/71b845f3-774a-4b9a-a235-3ccbbd5ab3f7-24eb/screen/84d23b88-e0c8-4585-b5eb-6e5e1eebd8d1/
+### https://xd.adobe.com/view/582aa12f-e141-4c58-858a-5c7881baab83-0d79/
 ### ninjacart
 ### https://xd.adobe.com/view/327310c4-a9e9-4cac-ae84-481538bb8751-6720/screen/fea12235-d149-41c1-ac89-a009758144cd
 ### rapido
