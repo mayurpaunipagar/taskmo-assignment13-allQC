@@ -648,7 +648,7 @@ export default function QcDetailsJiomart({
                 <div className="row_note1">
                   <p className="note_name">note:</p>
                   <p className="note_stats">
-                  Verify the MID, is this same as in the profile screen
+                  Verify the MID number from profile verification screenshot
                   </p>
                 </div>
               </div>   
