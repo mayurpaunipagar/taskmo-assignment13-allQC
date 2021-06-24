@@ -670,7 +670,7 @@ export default function QcDetailsJiomart({
                               Object.keys(api).length > 0
                                 ? `${IMAGES_BASE_URL}/${api.profile_verification_image}`
                                 : window.location.origin +
-                                  "/images/profile-verification.svg"
+                                  "/images/profileSS.png"
                             }`}
                             alt="profile verfication"
                             className="proof_image"
